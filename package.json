@@ -1,0 +1,19 @@
+{
+  "name": "autotest-inazone",
+  "version": "1.0.0",
+  "description": "Automation test for inazone",
+  "license": "ISC",
+  "author": "Indah Mutiah Utami MZ",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.8.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
