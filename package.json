@@ -7,7 +7,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test:ui": "playwright test --ui"
+    "test:ui": "playwright test --ui",
+    "test": "playwright test",
+    "test:report": "playwright show-report"
   },
   "devDependencies": {
     "@playwright/test": "^1.56.1",
