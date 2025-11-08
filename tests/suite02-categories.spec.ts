@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 
-dotenv.config();
+// dotenv.config();
 
-const BASE_URL = process.env.BASE_URL || 'https://google.com';
+const BASE_URL = "https://nepak-point-api.indahmutiah.com";
 const categoriesEndpoint = `${BASE_URL}/categories`;
 
 test.describe('TS-03: Positve Test API Categories', () => {
