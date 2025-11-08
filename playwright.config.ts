@@ -1,7 +1,4 @@
 import { defineConfig, devices } from '@playwright/test';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 
 export default defineConfig({
@@ -12,7 +9,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: process.env.BASE_URL || 'https://google.com',
+    baseURL: 'https://nepak-point-api.indahmutiah.com',
     trace: 'on-first-retry',
   },
   projects: [
