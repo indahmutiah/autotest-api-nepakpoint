@@ -7,7 +7,11 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: 'html',
+  reporter: [
+    ['html', { outputFolder: 'playwright-report', open: 'never' }], 
+    ["line"], 
+    ["list"],
+    ['allure-playwright']],
   use: {
     baseURL: 'https://nepak-point-api.indahmutiah.com',
     trace: 'on-first-retry',
